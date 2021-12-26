@@ -3,6 +3,8 @@ import { todosRouter } from './todos/todo.router';
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('Well done!');
 });
