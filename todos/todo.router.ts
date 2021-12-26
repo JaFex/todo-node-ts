@@ -11,12 +11,36 @@ todosRouter.get('/', async (req : Request, res : Response) => {
   }
 });
 
-//Get By Id
+todosRouter.get('/:id', async (req : Request, res : Response) => {
+  try {
+    res.status(200).send('OK');
+  } catch (error) {
+    res.status(500).send();
+  }
+});
 
-//Post
+todosRouter.post('/', async (req : Request, res : Response) => {
+  try {
+    res.status(200).send('OK');
+  } catch (error) {
+    res.status(500).send();
+  }
+});
 
-//Put
+todosRouter.put('/:id', async (req : Request, res : Response) => {
+  try {
+    res.status(200).send('OK');
+  } catch (error) {
+    res.status(500).send();
+  }
+});
 
-//Delete
+todosRouter.delete('/:id', async (req : Request, res : Response) => {
+  try {
+    res.status(200).send('OK');
+  } catch (error) {
+    res.status(500).send();
+  }
+});
 
 
